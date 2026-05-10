@@ -195,6 +195,10 @@ h1 span {
   font-size: clamp(1rem, 1.45vw, 1.14rem);
 }
 
+.lead span {
+  display: block;
+}
+
 .hero-actions,
 .cta-buttons {
   display: flex;
