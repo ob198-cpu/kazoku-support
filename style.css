@@ -344,7 +344,6 @@ h1 span {
 .section-head,
 .statement-inner,
 .entry-grid,
-.service-matrix,
 .public-columns,
 .case-list,
 .flow-steps,
@@ -394,7 +393,6 @@ h1 span {
 }
 
 .entry-grid,
-.service-matrix,
 .case-list,
 .price-grid {
   display: grid;
@@ -403,7 +401,6 @@ h1 span {
 }
 
 .entry-grid article,
-.service-matrix article,
 .public-columns article,
 .case-list article,
 .price-grid article {
@@ -415,7 +412,6 @@ h1 span {
 }
 
 .entry-grid h3,
-.service-matrix h3,
 .public-columns h3,
 .case-list h3,
 .price-grid h3 {
@@ -425,7 +421,6 @@ h1 span {
 }
 
 .entry-grid p,
-.service-matrix p,
 .case-list p,
 .price-grid p {
   margin-bottom: 0;
@@ -445,14 +440,6 @@ h1 span {
   color: var(--gold) !important;
   font-size: 0.82rem;
   font-weight: 900;
-}
-
-.service-matrix {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.service-matrix article {
-  border-top: 5px solid var(--green);
 }
 
 .public-columns {
@@ -666,7 +653,6 @@ h1 span {
 
   .triage,
   .entry-grid,
-  .service-matrix,
   .case-list,
   .flow-steps,
   .price-grid {
@@ -734,7 +720,6 @@ h1 span {
   }
 
   .entry-grid,
-  .service-matrix,
   .case-list,
   .flow-steps,
   .price-grid {
