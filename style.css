@@ -265,7 +265,7 @@ h1 span {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   width: min(var(--container), calc(100% - 40px));
-  margin: -54px auto 0;
+  margin: 24px auto 0;
   scroll-margin-top: 110px;
 }
 
@@ -773,7 +773,7 @@ h1 span {
 
   .triage {
     grid-template-columns: 1fr;
-    margin-top: -42px;
+    margin-top: 22px;
   }
 
   .proof-band {
