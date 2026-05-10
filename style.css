@@ -273,39 +273,6 @@ h1 span {
   scroll-margin-top: 110px;
 }
 
-.proof-band {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  width: min(var(--container), calc(100% - 40px));
-  margin: 28px auto 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-}
-
-.proof-band div {
-  padding: 22px;
-  background: var(--white);
-}
-
-.proof-band strong,
-.proof-band span {
-  display: block;
-}
-
-.proof-band strong {
-  color: var(--deep);
-  font-size: 1.06rem;
-}
-
-.proof-band span {
-  margin-top: 4px;
-  color: var(--sub);
-  font-size: 0.9rem;
-}
-
 .triage-card {
   padding: clamp(24px, 3vw, 32px);
   border-radius: 8px;
@@ -710,7 +677,6 @@ h1 span {
   }
 
   .triage,
-  .proof-band,
   .expertise-grid,
   .entry-grid,
   .service-matrix,
@@ -778,10 +744,6 @@ h1 span {
   .triage {
     grid-template-columns: 1fr;
     margin-top: 22px;
-  }
-
-  .proof-band {
-    grid-template-columns: 1fr;
   }
 
   .expertise-grid,
