@@ -343,7 +343,6 @@ h1 span {
 
 .section-head,
 .statement-inner,
-.expertise-grid,
 .entry-grid,
 .service-matrix,
 .public-columns,
@@ -387,7 +386,6 @@ h1 span {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.expertise,
 .public,
 .flow,
 .report,
@@ -395,7 +393,6 @@ h1 span {
   background: var(--sage);
 }
 
-.expertise-grid,
 .entry-grid,
 .service-matrix,
 .case-list,
@@ -405,7 +402,6 @@ h1 span {
   gap: 16px;
 }
 
-.expertise-grid article,
 .entry-grid article,
 .service-matrix article,
 .public-columns article,
@@ -418,19 +414,6 @@ h1 span {
   background: var(--white);
 }
 
-.expertise-grid span {
-  display: inline-grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  color: #fff;
-  background: var(--deep);
-  font-weight: 900;
-}
-
-.expertise-grid h3,
 .entry-grid h3,
 .service-matrix h3,
 .public-columns h3,
@@ -441,7 +424,6 @@ h1 span {
   line-height: 1.45;
 }
 
-.expertise-grid p,
 .entry-grid p,
 .service-matrix p,
 .case-list p,
@@ -683,7 +665,6 @@ h1 span {
   }
 
   .triage,
-  .expertise-grid,
   .entry-grid,
   .service-matrix,
   .case-list,
@@ -752,7 +733,6 @@ h1 span {
     margin-top: 22px;
   }
 
-  .expertise-grid,
   .entry-grid,
   .service-matrix,
   .case-list,
