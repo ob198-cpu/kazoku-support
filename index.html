@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
@@ -29,14 +29,17 @@
         <a href="#membership">プラン</a>
         <a href="#contact">相談</a>
       </nav>
-      <a class="header-call" href="tel:000-0000-0000">緊急相談</a>
+      <a class="header-call" href="tel:000-0000-0000">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        緊急相談
+      </a>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-inner">
           <div class="hero-copy" data-reveal>
-            <p class="eyebrow">見守り・生活支援・自宅の整理まで、家族に代わって現地を支えます</p>
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>見守り・生活支援・自宅の整理まで、家族に代わって現地を支えます</p>
             <h1>
               <span>離れていても、</span>
               <span>家族の暮らしを</span>
@@ -59,9 +62,11 @@
             </div>
           </div>
           <div class="hero-visual" data-reveal>
-            <figure class="hero-photo">
-              <img src="assets/hero-senior-support.png" alt="">
-            </figure>
+            <div class="hero-photo-wrap">
+              <figure class="hero-photo">
+                <img src="assets/hero-senior-support.png" alt="">
+              </figure>
+            </div>
             <aside class="hero-note" aria-label="サービスの特徴">
               <p class="note-title">相談が多い内容</p>
               <ul>
@@ -77,21 +82,36 @@
 
       <section id="triage" class="triage" aria-label="受付窓口">
         <article id="urgent" class="triage-card urgent" data-reveal>
-          <p class="card-kicker">緊急確認</p>
+          <div class="triage-head">
+            <span class="triage-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            </span>
+            <p class="card-kicker">緊急確認</p>
+          </div>
           <h2>急ぎの安否確認</h2>
           <p>ご家族が電話に出ない、転倒していないか心配、郵便物が溜まっているようで不安。現地確認後、写真と電話で報告します。</p>
           <a class="phone" href="tel:000-0000-0000">000-0000-0000</a>
           <small>安否確認・現地確認・写真報告</small>
         </article>
         <article id="regular" class="triage-card regular" data-reveal>
-          <p class="card-kicker">生活・見守り</p>
+          <div class="triage-head">
+            <span class="triage-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.8-9.3-9.3A5.2 5.2 0 0 1 12 6.5a5.2 5.2 0 0 1 9.3 4.2C19.5 15.2 12 20 12 20z"/></svg>
+            </span>
+            <p class="card-kicker">生活・見守り</p>
+          </div>
           <h2>生活支援・見守り相談</h2>
           <p>買い物、通院同行、役所同行、住まいの点検、定期訪問などを、状況に合わせて組み立てます。</p>
           <a class="phone" href="tel:111-1111-1111">111-1111-1111</a>
           <small>買い物・通院同行・役所同行・定期訪問</small>
         </article>
         <article class="triage-card desk" data-reveal>
-          <p class="card-kicker">行政・専門家</p>
+          <div class="triage-head">
+            <span class="triage-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 13h16"/></svg>
+            </span>
+            <p class="card-kicker">行政・専門家</p>
+          </div>
           <h2>住まいの整理・専門家相談</h2>
           <p>生前整理、お焚き上げ、重要書類の確認、相続、遺言、成年後見などの相談先を整理します。</p>
           <a class="desk-link" href="#public">連携内容を見る</a>
@@ -106,46 +126,73 @@
         </div>
         <div class="entry-grid">
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.7"/></svg>
+            </span>
             <p class="entry-label">見守り</p>
             <h3>安否確認・定期訪問</h3>
             <p>連絡が取れない時の現地確認、月次訪問、郵便物や室内状況の確認、写真付き報告を行います。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1.2 12H7.2L6 8z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg>
+            </span>
             <p class="entry-label">生活</p>
             <h3>買い物・通院・役所同行</h3>
             <p>買い物、薬の受け取り、病院や役所への付き添い、本人だけでは不安な用事を支援します。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.8V20h12V9.8"/><path d="M10 20v-5.5h4V20"/></svg>
+            </span>
             <p class="entry-label">住まい</p>
             <h3>安全確認・ご自宅整理</h3>
             <p>転倒しやすい場所、戸締まり、照明、鍵、防犯カメラの相談、片付け、換気、通水、売却・賃貸前の現地管理のご相談を承ります。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s5 4.6 5 9a5 5 0 0 1-10 0c0-1.9.9-3.6 2-5.2.6 1.4 1.4 2 2.2 2.2C10.7 7 11 5 12 3z"/></svg>
+            </span>
             <p class="entry-label">供養</p>
             <h3>お焚き上げ・供養手配</h3>
             <p>写真、手紙、人形、衣類、仏具、神棚など、処分しづらい品を仕分け、寺院・専門先への供養手配を行います。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16v11H4z"/><path d="M4 9l1.8-4h12.4L20 9"/><path d="M10 13h4"/></svg>
+            </span>
             <p class="entry-label">生前整理</p>
             <h3>生前整理</h3>
             <p>大切に保管する物、ご家族へ送る物、供養する物、整理する物を確認し、写真で共有します。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V5.5L14 3v18"/><path d="M14 8.5l5 1.5v11"/><path d="M8.5 9h2M8.5 13h2M17 14h0.01"/><path d="M3 21h18"/></svg>
+            </span>
             <p class="entry-label">入居</p>
             <h3>施設入居前の整理</h3>
             <p>入院・施設入居前後の荷物整理、衣類や日用品の選別、持ち込み品の準備、退去前の家財整理を支援します。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l8.5-8.5"/><path d="M16 5l3 3"/></svg>
+            </span>
             <p class="entry-label">貴重品整理</p>
             <h3>重要書類・貴重品の整理</h3>
             <p>通帳、印鑑、権利証、保険証券、年金書類、契約書、鍵など、手続きに必要な物を探しながら整理します。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 12h5M10 16h5"/></svg>
+            </span>
             <p class="entry-label">手続き</p>
             <h3>行政・士業相談の準備</h3>
             <p>介護保険、施設入居、成年後見、相続、名義変更などの相談先を整理します。</p>
           </article>
           <article data-reveal>
+            <span class="entry-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7.5" y="3" width="9" height="18" rx="2.2"/><path d="M11 17.5h2"/></svg>
+            </span>
             <p class="entry-label">デジタル</p>
             <h3>デジタルまわりの相談整理</h3>
             <p>スマートフォン、写真データ、サブスク、ネット銀行など、確認が必要な内容は相談先を整理します。</p>
@@ -281,7 +328,7 @@
       </section>
 
       <section id="contact" class="cta" data-reveal>
-        <div>
+        <div class="cta-copy">
           <p class="section-kicker">ご相談</p>
           <h2>ご家族の見守り、生活の困りごと、住まいの整理を一度ご相談ください。</h2>
           <p>日常の支援から、お焚き上げ・生前整理・空き家管理まで、必要な範囲を一緒に整理します。急ぎの場合は緊急窓口へお電話ください。</p>
@@ -297,6 +344,6 @@
       <p><strong>シルバー安心代行</strong> | 見守り・生活支援・通院役所同行・お焚き上げ・生前整理・空き家管理・士業連携</p>
       <small>電話番号、対応エリア、提携専門家、料金は公開前に正式情報へ差し替えてください。</small>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>
