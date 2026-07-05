@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>シルバー安心代行 | 見守り・生活支援・ご自宅整理の家族代理サポート</title>
     <meta name="description" content="離れて暮らすご家族の見守り、安否確認、生活支援、通院・役所同行、ご自宅整理、お焚き上げ、空き家管理、行政・士業相談の手配まで。現地状況を記録し、ご家族へ報告します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
     <header class="site-header">
@@ -13,7 +17,7 @@
         <span class="brand-mark" aria-hidden="true">
           <img src="assets/brand-logo.png" alt="">
         </span>
-        <span>
+        <span class="brand-text">
           <strong>シルバー安心代行</strong>
           <small>離れて暮らす家族の専任窓口</small>
         </span>
@@ -31,12 +35,12 @@
     <main id="top">
       <section class="hero">
         <div class="hero-inner">
-          <div class="hero-copy">
+          <div class="hero-copy" data-reveal>
             <p class="eyebrow">見守り・生活支援・自宅の整理まで、家族に代わって現地を支えます</p>
             <h1>
               <span>離れていても、</span>
               <span>家族の暮らしを</span>
-              <span>見守れる。</span>
+              <span class="accent">見守れる。</span>
             </h1>
             <p class="lead">
               <span>安否確認、買い物や通院同行、役所手続き、住まいの安全確認、</span>
@@ -54,34 +58,39 @@
               </a>
             </div>
           </div>
-          <aside class="hero-note" aria-label="サービスの特徴">
-            <p class="note-title">相談が多い内容</p>
-            <ul>
-              <li>電話に出ない家族の安否確認</li>
-              <li>買い物、通院、役所への付き添い</li>
-              <li>自宅の整理、供養、重要書類の確認</li>
-              <li>空き家の防犯・換気・郵便物管理</li>
-            </ul>
-          </aside>
+          <div class="hero-visual" data-reveal>
+            <figure class="hero-photo">
+              <img src="assets/hero-senior-support.png" alt="">
+            </figure>
+            <aside class="hero-note" aria-label="サービスの特徴">
+              <p class="note-title">相談が多い内容</p>
+              <ul>
+                <li>電話に出ない家族の安否確認</li>
+                <li>買い物、通院、役所への付き添い</li>
+                <li>自宅の整理、供養、重要書類の確認</li>
+                <li>空き家の防犯・換気・郵便物管理</li>
+              </ul>
+            </aside>
+          </div>
         </div>
       </section>
 
       <section id="triage" class="triage" aria-label="受付窓口">
-        <article id="urgent" class="triage-card urgent">
+        <article id="urgent" class="triage-card urgent" data-reveal>
           <p class="card-kicker">緊急確認</p>
           <h2>急ぎの安否確認</h2>
           <p>ご家族が電話に出ない、転倒していないか心配、郵便物が溜まっているようで不安。現地確認後、写真と電話で報告します。</p>
           <a class="phone" href="tel:000-0000-0000">000-0000-0000</a>
           <small>安否確認・現地確認・写真報告</small>
         </article>
-        <article id="regular" class="triage-card regular">
+        <article id="regular" class="triage-card regular" data-reveal>
           <p class="card-kicker">生活・見守り</p>
           <h2>生活支援・見守り相談</h2>
           <p>買い物、通院同行、役所同行、住まいの点検、定期訪問などを、状況に合わせて組み立てます。</p>
           <a class="phone" href="tel:111-1111-1111">111-1111-1111</a>
           <small>買い物・通院同行・役所同行・定期訪問</small>
         </article>
-        <article class="triage-card desk">
+        <article class="triage-card desk" data-reveal>
           <p class="card-kicker">行政・専門家</p>
           <h2>住まいの整理・専門家相談</h2>
           <p>生前整理、お焚き上げ、重要書類の確認、相続、遺言、成年後見などの相談先を整理します。</p>
@@ -90,53 +99,53 @@
       </section>
 
       <section id="entry" class="section entry">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-kicker">支援内容</p>
           <h2>見守り、生活の手伝い、住まいの整理を同じ窓口で相談できます。</h2>
           <p>ご家族の暮らしの状態に合わせて、日常の支援から住まいの整理まで無理なく組み合わせます。</p>
         </div>
         <div class="entry-grid">
-          <article>
+          <article data-reveal>
             <p class="entry-label">見守り</p>
             <h3>安否確認・定期訪問</h3>
             <p>連絡が取れない時の現地確認、月次訪問、郵便物や室内状況の確認、写真付き報告を行います。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">生活</p>
             <h3>買い物・通院・役所同行</h3>
             <p>買い物、薬の受け取り、病院や役所への付き添い、本人だけでは不安な用事を支援します。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">住まい</p>
             <h3>安全確認・ご自宅整理</h3>
             <p>転倒しやすい場所、戸締まり、照明、鍵、防犯カメラの相談、片付け、換気、通水、売却・賃貸前の現地管理のご相談を承ります。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">供養</p>
             <h3>お焚き上げ・供養手配</h3>
             <p>写真、手紙、人形、衣類、仏具、神棚など、処分しづらい品を仕分け、寺院・専門先への供養手配を行います。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">生前整理</p>
             <h3>生前整理</h3>
             <p>大切に保管する物、ご家族へ送る物、供養する物、整理する物を確認し、写真で共有します。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">入居</p>
             <h3>施設入居前の整理</h3>
             <p>入院・施設入居前後の荷物整理、衣類や日用品の選別、持ち込み品の準備、退去前の家財整理を支援します。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">貴重品整理</p>
             <h3>重要書類・貴重品の整理</h3>
             <p>通帳、印鑑、権利証、保険証券、年金書類、契約書、鍵など、手続きに必要な物を探しながら整理します。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">手続き</p>
             <h3>行政・士業相談の準備</h3>
             <p>介護保険、施設入居、成年後見、相続、名義変更などの相談先を整理します。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="entry-label">デジタル</p>
             <h3>デジタルまわりの相談整理</h3>
             <p>スマートフォン、写真データ、サブスク、ネット銀行など、確認が必要な内容は相談先を整理します。</p>
@@ -145,7 +154,7 @@
       </section>
 
       <section id="standards" class="section statement">
-        <div class="statement-inner">
+        <div class="statement-inner" data-reveal>
           <p class="section-kicker">品質基準</p>
           <h2>現地で見えた変化を、ご家族の判断材料として残します。</h2>
           <p>
@@ -156,12 +165,12 @@
       </section>
 
       <section class="section report">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-kicker">報告品質</p>
           <h2>現地で確認した内容を、ご家族が次を判断できる形で報告します。</h2>
         </div>
         <div class="report-layout">
-          <div class="report-card">
+          <div class="report-card" data-reveal>
             <h3>訪問後レポートに含める内容</h3>
             <ul>
               <li>ご家族の様子、室内・玄関・郵便物の状況</li>
@@ -171,7 +180,7 @@
               <li>行政・医療・不動産・士業へ相談すべき論点</li>
             </ul>
           </div>
-          <div class="report-panel">
+          <div class="report-panel" data-reveal>
             <p class="panel-title">ご家族の負担を減らす設計</p>
             <p>見守り、生活支援、住まいの整理の履歴を残すことで、ご家族の変化や住まいの課題を継続して相談できます。</p>
           </div>
@@ -179,7 +188,7 @@
       </section>
 
       <section id="public" class="section public">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-kicker">行政・士業連携</p>
           <h2>生活支援の範囲と専門家業務を分け、必要な相談先へつなぎます。</h2>
           <p>
@@ -188,7 +197,7 @@
           </p>
         </div>
         <div class="public-columns">
-          <article>
+          <article data-reveal>
             <h3>行政・福祉窓口</h3>
             <ul>
               <li>役所・地域包括支援センターへの同行</li>
@@ -197,7 +206,7 @@
               <li>申請時に必要な持ち物や確認事項の整理</li>
             </ul>
           </article>
-          <article>
+          <article data-reveal>
             <h3>士業・専門相談</h3>
             <ul>
               <li>相続、遺言、成年後見、将来の手続きに関する相談先案内</li>
@@ -210,38 +219,38 @@
       </section>
 
       <section class="section flow">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-kicker">対応の流れ</p>
           <h2>ご相談から報告までの流れ</h2>
         </div>
         <ol class="flow-steps">
-          <li><strong>聞き取り</strong><span>ご家族の状況、住所、緊急度、ご依頼者様の希望を確認します。</span></li>
-          <li><strong>対応設計</strong><span>訪問内容、必要な手配、概算費用、報告方法を決めます。</span></li>
-          <li><strong>現地対応</strong><span>安否確認、同行、生活支援、住まいの確認などを行います。</span></li>
-          <li><strong>報告と次回提案</strong><span>写真付きで報告し、次に必要な対応を整理します。</span></li>
+          <li data-reveal><strong>聞き取り</strong><span>ご家族の状況、住所、緊急度、ご依頼者様の希望を確認します。</span></li>
+          <li data-reveal><strong>対応設計</strong><span>訪問内容、必要な手配、概算費用、報告方法を決めます。</span></li>
+          <li data-reveal><strong>現地対応</strong><span>安否確認、同行、生活支援、住まいの確認などを行います。</span></li>
+          <li data-reveal><strong>報告と次回提案</strong><span>写真付きで報告し、次に必要な対応を整理します。</span></li>
         </ol>
       </section>
 
       <section id="membership" class="section price">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-kicker">プラン</p>
           <h2>見守りの単発対応から、生活支援・住まい整理の継続支援まで。</h2>
           <p>訪問距離、時間帯、作業内容、供養手配、専門家手配の有無により変動します。正式対応前に概算をご案内します。</p>
         </div>
         <div class="price-grid">
-          <article>
+          <article data-reveal>
             <p class="price-label">緊急</p>
             <h3>当日安否確認</h3>
             <p class="price-main">22,000円〜</p>
             <p>ご家族や住まいの状態確認、写真報告、ご依頼者様への電話報告、次回対応の整理を含みます。</p>
           </article>
-          <article class="featured">
+          <article class="featured" data-reveal>
             <p class="price-label">標準</p>
             <h3>生活支援・整理相談</h3>
             <p class="price-main">55,000円〜</p>
             <p>買い物・同行・住まい確認・生前整理・供養品の相談を組み合わせて対応します。</p>
           </article>
-          <article>
+          <article data-reveal>
             <p class="price-label">上位</p>
             <h3>家族サポート月額</h3>
             <p class="price-main">月 110,000円〜</p>
@@ -251,27 +260,27 @@
       </section>
 
       <section class="section faq">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
           <p class="section-kicker">よくあるご質問</p>
           <h2>よくあるご質問</h2>
         </div>
         <div class="faq-list">
-          <details>
+          <details data-reveal>
             <summary>遠方に住んでいて、現地に行けなくても依頼できますか。</summary>
             <p>はい。現地確認後、写真と電話で状況を報告します。残す物・供養する物・整理する物の判断は、ご家族と確認しながら進めます。</p>
           </details>
-          <details>
+          <details data-reveal>
             <summary>お焚き上げだけでも相談できますか。</summary>
             <p>可能です。写真、手紙、人形、仏具、神棚など、処分しづらい品の仕分けと供養手配を相談できます。</p>
           </details>
-          <details>
+          <details data-reveal>
             <summary>相続や不動産の相談もできますか。</summary>
             <p>相談内容を整理し、必要に応じて行政書士・司法書士・弁護士・不動産会社などの専門家へおつなぎします。</p>
           </details>
         </div>
       </section>
 
-      <section id="contact" class="cta">
+      <section id="contact" class="cta" data-reveal>
         <div>
           <p class="section-kicker">ご相談</p>
           <h2>ご家族の見守り、生活の困りごと、住まいの整理を一度ご相談ください。</h2>
